@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Valentine Istimewa Untukmu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="particle-bg"></div>
+    <div id="cursor-trail-container"></div>
+
+    <!-- Music Controls -->
+    <div class="music-controls">
+        <button id="musicToggle" class="music-button">
+            <i class="fas fa-play"></i>
+        </button>
+        <audio id="backgroundMusic" loop>
+            <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper">
+        <!-- 1. Cinematic Opening Screen -->
+        <section id="openingScreen" class="screen active">
+            <div class="content glassmorphism">
+                <h1>Untuk seseorang yang spesial...</h1>
+                <button id="openMessageBtn" class="btn animated-btn">Buka Pesan</button>
+            </div>
+        </section>
+
+        <!-- 2. Typing Love Message -->
+        <section id="animatedMessage" class="screen">
+            <div class="content glassmorphism">
+                <h2 class="typing-effect"></h2>
+                <button id="moveToLetterBtn" class="btn animated-btn hidden">Lanjut Membaca</button>
+            </div>
+        </section>
+
+        <!-- 3. Digital Love Letter -->
+        <section id="loveLetter" class="screen">
+            <div class="content glassmorphism letter-style">
+                <h2>Surat Cinta Digital</h2>
+                <div class="letter-text">
+                    <p>Cintaku,</p>
+                    <p>Di hari yang penuh kasih ini, aku ingin mengungkapkan betapa berharganya dirimu bagiku. Setiap hari bersamamu adalah hadiah terindah, mengisi hidupku dengan kebahagiaan dan tawa. Kau adalah bintang yang membimbingku, mentari yang menghangatkan jiwaku.</p>
+                    <p>Aku bersyukur atas setiap momen yang kita bagi, tawa, air mata, dan semua petualangan yang telah kita lalui bersama. Masa depan bersamamu adalah impian yang ingin selalu kuwujudkan.</p>
+                    <p>Terima kasih telah menjadi dirimu, terima kasih atas cinta tanpa batasmu. Aku mencintaimu, lebih dari kata-kata yang bisa kuucapkan.</p>
+                    <p>Dengan segenap cinta,<br>[Nama Pengirim]</p>
+                </div>
+                <button id="showSurpriseBtn" class="btn animated-btn">Klik untuk Kejutan!</button>
+            </div>
+        </section>
+
+        <!-- 4. Surprise Interaction -->
+        <section id="surpriseSection" class="screen">
+            <div id="confetti-container"></div>
+            <div class="content">
+                <button id="triggerSurpriseBtn" class="btn animated-btn large-btn">Klik untuk kejutan!</button>
+                <h2 class="special-message hidden">Aku sayang kamu ❤️</h2>
+                <button id="moveToFinalBtn" class="btn animated-btn hidden">Lihat Pesan Terakhir</button>
+            </div>
+        </section>
+
+        <!-- 5. Final Scene -->
+        <section id="finalScene" class="screen">
+            <div class="content glassmorphism">
+                <h1>Happy Valentine’s Day</h1>
+                <h2>Selamanya bersamamu.</h2>
+                <button id="restartBtn" class="btn animated-btn">Mulai Lagi</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
