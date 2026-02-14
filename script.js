@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         backgroundMusic: document.getElementById('backgroundMusic'),
     };
 
-    const loveMessage = "Sayangku, setiap detik bersamamu adalah melodi terindah. Terima kasih telah mengisi duniaku dengan cinta dan kebahagiaan. Selamat Hari Valentine, kekasih hatiku!";
+    const loveMessage = "Sayang, makasih sudah jadi bagian penting dalam hidupku. Semoga kita selalu bisa saling jaga dan tetap bareng. Selamat Hari Valentine.";
     let isMusicPlaying = false;
     let activeScreen = screens.opening;
 
@@ -205,3 +205,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start background particle system (optimized to run every 1.5 seconds)
     setInterval(createParticle, 1500);
 });
+
